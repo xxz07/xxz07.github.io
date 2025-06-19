@@ -57,36 +57,54 @@
     <main
       class="container my-4 bg-secondary bg-gradient rounded d-flex justify-content-center align-items-center"
     >
-      <form class="my-3 text-light">
-        <div class="mb-3">
-          <label for="inputEmail" class="form-label">Email address</label>
-          <input
-            type="email"
-            class="form-control"
-            id="inputEmail"
-            aria-describedby="emailHelp"
-            placeholder="name@example.com"
-          />
-          <div id="emailHelp" class="form-text text-light">
-            I'll never share your email with anyone else.
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-sm-12 col-md-6">
+          <form class="my-3 text-light">
+            <div class="mb-3">
+              <label for="inputEmail" class="form-label">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmail"
+                aria-describedby="emailHelp"
+                placeholder="name@example.com"
+              />
+              <div id="emailHelp" class="form-text text-light">
+                I'll never share your email with anyone else.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="inputMessage" class="form-label"
+                >Write me a message!</label
+              >
+              <textarea
+                class="form-control"
+                id="inputMessage"
+                placeholder="Write here your message"
+              ></textarea>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="check" />
+              <label class="form-check-label" for="check">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
+        </div>
+
+        <div class="col-sm-12 col-md-6">
+          <div class="card bg-light text-center" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">My github</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Github link</h6>
+              <p class="card-text">
+                Intrested in my github account and repositories? Feel free to have a look around!
+              </p>
+              <a href="https://github.com/xxz07" class="card-link">Github link</a>
+              <a href="https://github.com/ROCMondriaanTIN" class="card-link text-danger">Organiser link</a>
+            </div>
           </div>
         </div>
-        <div class="mb-3">
-          <label for="inputMessage" class="form-label"
-            >Write me a message!</label
-          >
-          <textarea
-            class="form-control"
-            id="inputMessage"
-            placeholder="Write here your message"
-          ></textarea>
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="check" />
-          <label class="form-check-label" for="check">Check me out</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Send</button>
-      </form>
+      </div>
     </main>
 
     <footer
