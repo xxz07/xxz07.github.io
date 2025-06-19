@@ -54,7 +54,40 @@
       </div>
     </nav>
 
-    
+    <main
+      class="container my-4 bg-secondary bg-gradient rounded d-flex justify-content-center align-items-center"
+    >
+      <form class="my-3 text-light">
+        <div class="mb-3">
+          <label for="inputEmail" class="form-label">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="inputEmail"
+            aria-describedby="emailHelp"
+            placeholder="name@example.com"
+          />
+          <div id="emailHelp" class="form-text text-light">
+            I'll never share your email with anyone else.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="inputMessage" class="form-label"
+            >Write me a message!</label
+          >
+          <textarea
+            class="form-control"
+            id="inputMessage"
+            placeholder="Write here your message"
+          ></textarea>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="check" />
+          <label class="form-check-label" for="check">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+    </main>
 
     <footer
       class="container-fluid mt-2 alert text-light bg-secondary bg-gradient rounded"
